@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="null.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Comics</th>
+					<th>FAV</th>
+					<th>Actions</th>
+				</tr>
+			</thead>
+			<tbody id="table-body">
+			</tbody>
+		</table>
+
+		<div class="add-hero">
+			<h2 class="add-hero__title">Add new hero</h2>
+			<form class="add-hero__form form" id="add-hero-form">
+				<div class="form__input input">
+					<label class="input__label" for="heroName">Name:</label>
+					<input class="input__value" id="heroName" name="heroName" type="text">
+				</div>
+				<div class="form__input input">
+					<label class="input__label" for="heroComics">Comics:</label>
+					<select class="input__value" id="heroComics" name="heroComics" form="add-hero-form">
+					</select>
+				</div>
+				<div class="form__input input">
+					<label class="input__label" for="heroFav">Favourite:</label>
+					<input class="input__value" id="heroFav" name="heroFav" type="checkbox">
+				</div>
+				<div class="form__input input">
+					<button class="input__button" id="add-hero-btn" type="submit">Add</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
